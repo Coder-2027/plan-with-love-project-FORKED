@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-To get started with the counter app, follow the steps below:
+To setup locally , follow the steps below:
 
 Clone the repository:
 
