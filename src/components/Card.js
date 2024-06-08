@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-function Card({id, image, info, price, name, removeTour}) {
+function Card({id, image, info, price, name, removeTour}) {								//*****IMPORTANT*****
 
     const[readmore, setReadmore] = useState(false);
 
-    const description = readmore ? info :`${info.substring(0, 200)}`;
+    const description = readmore ? info :`${info.substring(0, 200)}`;						//from here we understand that useState produces change wherever readmore is writtenlike here it will produce change in description in UI
 
     function readmoreHandler() {
         setReadmore(!readmore);
@@ -28,7 +28,7 @@ function Card({id, image, info, price, name, removeTour}) {
                     </span>
                 </div>
             </div>
-            <button className="btn-red" onClick={() => removeTour(id)}>
+            <button className="btn-red" onClick={() => removeTour(id)}>					//id was 1, 2, 3, 4, 5 this remove tour function should be there where ever the info about tour was stored
                 Not Interested
             </button>
         </div>
