@@ -5,7 +5,7 @@ import Tours from "./components/Tours";
 
 const App = () => {
 
-  const [tours, setTours] = useState(data);
+  const [tours, setTours] = useState(data);                  //setting the value of variable tours here
 
   function removeTour(id) {
     const newTours = tours.filter(tour => tour.id !== id);
