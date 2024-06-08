@@ -8,11 +8,11 @@ const App = () => {
   const [tours, setTours] = useState(data);                  //setting the value of variable tours here
 
   function removeTour(id) {
-    const newTours = tours.filter(tour => tour.id !== id);
+    const newTours = tours.filter(tour => tour.id !== id);                //filter will return an array
     setTours(newTours);
   }
 
-  if(tours.length === 0){
+  if(tours.length === 0){                  //now due to useState control will go to all those places where this tour was written
     return (
       <div className="refresh">
         <h2>No Tours Left</h2>
