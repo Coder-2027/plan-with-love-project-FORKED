@@ -22,6 +22,7 @@ function Tours({tours, removeTour}) {               //Another way of receiving d
 						// map() does not change the original array.
                 tours.map((tour) => {
                     return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>			//returns an array of card tag
+			//{...tour} is used for passing a copy of object *****Read about list and map in react doc***** from where we know that it is always essential to pass a key whenever using a map and the should be unique if we dont have a unique element then we pass index
                 })
             }
             </div>
