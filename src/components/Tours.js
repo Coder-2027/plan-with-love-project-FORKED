@@ -2,7 +2,8 @@
 import Card from './Card';
 
 function Tours({tours, removeTour}) {               //Another way of receiving data in place of props, we know props was an object only from which we used to take data using dot operator [Now here we can directly use variable tours and removeTour]
-    return (
+    //						** point to be noted here is that we need to use same name as passed 
+	return (
          <div className='container'>
             <div>
             <h2 className='title'>Plan With love</h2>
